@@ -25,7 +25,7 @@ const (
     '-'
 `
 
-	Version         = 1.2
+	Version         = 1.3
 	TimeoutSec      = 3
 	BcastAddr       = "224.0.0.252"
 	LLMNRPort       = 5355
@@ -142,6 +142,7 @@ func checkResponderOnInterface(inf net.Interface) map[string]string {
 		if responderIP != "" {
 			fmt.Fprintf(outFile, "responder detected at %s\n", responderIP)
 			json = map[string]string{
+				"timestamp":   time.Now().Format(time.RFC3339),
 				"interface":   inf.Name,
 				"sourceIP":    ip.String(),
 				"responderIP": responderIP,

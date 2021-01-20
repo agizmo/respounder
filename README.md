@@ -26,13 +26,13 @@
 ### Latest Releases
 Respounder is available for 32/64 bit linux, OS X and Windows systems.
 Latest versions can be downloaded from the
-[Release](https://github.com/codeexpress/respounder/releases) tab above.
+[Release](https://github.com/agizmo/respounder/releases) tab above.
 
 ### Build from source
 This is a golang project with no dependencies. Assuming you have golang compiler installed,
 the following will build the binary from scratch
 ```
-$ git clone https://github.com/codeexpress/respounder
+$ git clone https://github.com/agizmo/respounder
 $ cd respounder
 $ go build -o respounder respounder.go
 ```
